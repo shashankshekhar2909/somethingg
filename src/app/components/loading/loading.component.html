@@ -1,0 +1,10 @@
+<div class="loadingContainer">
+    <h1>
+        <span class="flip-letter" *ngFor="let char of text; let i = index"
+              [style.animation-delay]="i * 0.1 + 's'">
+            {{char}}
+        </span>
+        <span class="dots">...</span>
+    </h1>
+
+</div>
